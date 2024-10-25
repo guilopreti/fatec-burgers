@@ -1,0 +1,45 @@
+.vitrine-produtos {
+  list-style: none;
+  padding: 0;
+  margin-left: 16px;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 380px;
+}
+
+.resultado-busca {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  text-align: initial;
+  margin-left: 17px;
+  font-weight: 700;
+  color: #333333;
+  font-size: 26px;
+}
+
+.resultado-busca span {
+  color: #828282;
+  font-weight: 700;
+  font-size: 23px;
+}
+
+@media (min-width: 1055px) {
+  .bloco__vitrineProdutos {
+    width: 70%;
+    height: 100%;
+  }
+
+  .vitrine-produtos {
+    overflow-x: initial;
+    overflow-y: initial;
+    flex-wrap: wrap;
+    height: auto;
+  }
+}
+
+@media (min-width: 1398px) {
+  .bloco__vitrineProdutos {
+    width: 988px;
+  }
+}

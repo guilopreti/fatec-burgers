@@ -1,0 +1,19 @@
+.button__green {
+  background-color: #27ae60;
+  color: white;
+  cursor: pointer;
+}
+
+.button__grey {
+  background-color: #e0e0e0;
+  color: #828282;
+  cursor: pointer;
+}
+
+.button__green:hover {
+  filter: brightness(1.1);
+}
+
+.button__grey:hover {
+  filter: brightness(0.9);
+}

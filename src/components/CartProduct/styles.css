@@ -1,0 +1,99 @@
+.product-cart {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  margin-bottom: 23px;
+}
+
+.product-cart figure {
+  background-color: #e0e0e0;
+  width: 80px;
+  height: 80px;
+  margin-left: 19px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.product-cart figcaption {
+  display: none;
+}
+
+.imagem__sanduba--cart {
+  width: 70px;
+  height: 70px;
+}
+
+.imagem__milkshake--cart {
+  width: 70px;
+  height: 70px;
+}
+
+.imagem__refris--cart {
+  width: 99px;
+  height: 99px;
+  margin-top: -30px;
+}
+
+.imagem__delvalle--cart{
+  width: 99px;
+}
+
+.imagem__nuggets--cart {
+  margin-top: -12px;
+  width: 99px;
+  height: 99px;
+}
+
+.imagem__batata--cart {
+  width: 80px;
+  height: 85px;
+  margin-top: -20px;
+}
+
+.product-cart div {
+  width: 170px;
+  text-align: initial;
+  margin-right: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.product-cart h2 {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: 700;
+  color: #333333;
+}
+
+.product-cart span {
+  color: #828282;
+  font-size: 12px;
+  font-weight: 400;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.product-cart span:hover {
+  color: #333333;
+  cursor: pointer;
+  border-bottom: 1px solid #333333;
+}
+
+li .remover__produtosCart {
+  margin-top: 15px;
+  font-weight: 500;
+  color: #bdbdbd;
+}
+
+@media (max-width: 390px) {
+  .product-cart div {
+    width: 95px;
+  }
+}
