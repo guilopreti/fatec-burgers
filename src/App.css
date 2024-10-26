@@ -1,6 +1,9 @@
 .App {
   text-align: center;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 }
 
 main {
@@ -8,10 +11,17 @@ main {
   flex-direction: column;
 }
 
+footer {
+  margin-top: 325px;
+}
+
 @media (min-width: 1055px) {
   main {
     flex-direction: row;
-    height: 100%;
     justify-content: center;
+  }
+
+  footer {
+    margin-top: 35px;
   }
 }

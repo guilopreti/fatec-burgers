@@ -1,6 +1,7 @@
 import "./styles.css";
+import { TiMinus } from "react-icons/ti";
 
-const CartProduct = ({ img, name, category, id, deleteOneSale }) => {
+const CartProduct = ({ img, name, category, id, deleteOneSale, qtd }) => {
   return (
     <li key={id} className="product-cart">
       <figure>
@@ -27,9 +28,12 @@ const CartProduct = ({ img, name, category, id, deleteOneSale }) => {
         <h2>{name}</h2>
         <span>{category}</span>
       </div>
-      <span onClick={() => deleteOneSale(id)} className="remover__produtosCart">
-        Remover
-      </span>
+      <div className="div__quantidade">
+        <span className="remover__produtosCart">{qtd}</span>
+        <span onClick={() => deleteOneSale(id)}>
+          <TiMinus />
+        </span>
+      </div>
     </li>
   );
 };

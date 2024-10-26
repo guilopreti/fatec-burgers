@@ -2,7 +2,7 @@ import CartProduct from "../CartProduct";
 import CartTotal from "../CartTotal";
 import "./styles.css";
 
-const Cart = ({ currentSale, deleteAllSales, deleteOneSale }) => {
+const Cart = ({ currentSale, deleteAllSales, deleteOneSale, showModal }) => {
   return (
     <section className="cart">
       <div className="cart__title">
@@ -16,7 +16,7 @@ const Cart = ({ currentSale, deleteAllSales, deleteOneSale }) => {
       ) : (
         <div className="cart__products">
           <ul>
-            {currentSale.map(({ img, name, category, id }) => {
+            {currentSale.map(({ img, name, category, id, qtd }) => {
               return (
                 <CartProduct
                   img={img}
@@ -24,6 +24,7 @@ const Cart = ({ currentSale, deleteAllSales, deleteOneSale }) => {
                   category={category}
                   id={id}
                   deleteOneSale={deleteOneSale}
+                  qtd={qtd}
                 />
               );
             })}
@@ -31,6 +32,7 @@ const Cart = ({ currentSale, deleteAllSales, deleteOneSale }) => {
           <CartTotal
             currentSale={currentSale}
             deleteAllSales={deleteAllSales}
+            showModal={showModal}
           />
         </div>
       )}

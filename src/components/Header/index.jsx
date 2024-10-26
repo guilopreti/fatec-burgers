@@ -1,13 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./styles.css";
+import Button from "../Button";
 
 const Header = ({ showProducts, changeSearch }) => {
   const [inputValue, setInputValue] = useState("");
 
+  useEffect(() => {
+    if (inputValue === "") {
+      showProducts(inputValue);
+      changeSearch(inputValue);
+    }
+  }, [inputValue]);
+
   return (
     <header>
       <p>
-        Burguers <span>Fatec</span>
+        Burgers <span>Fatec</span>
       </p>
 
       <div className="div-busca">
@@ -16,14 +24,14 @@ const Header = ({ showProducts, changeSearch }) => {
           id="input-placeholder"
           onChange={(evt) => setInputValue(evt.target.value)}
         />
-        <button
+        <Button
           onClick={function () {
             showProducts(inputValue);
             changeSearch(inputValue);
           }}
         >
           Pesquisar
-        </button>
+        </Button>
       </div>
     </header>
   );

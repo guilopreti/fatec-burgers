@@ -11,14 +11,14 @@ import Nuggets from "../imgs/nuggets.png";
 const storeProducts = () => [
   {
     id: 1,
-    name: "Chicken Burguer",
+    name: "Chicken Burger",
     category: "Sanduíches",
     price: 14,
     img: Chicken,
   },
   {
     id: 2,
-    name: "X-Burguer",
+    name: "X-Burger",
     category: "Sanduíches",
     price: 16,
     img: XBurger,

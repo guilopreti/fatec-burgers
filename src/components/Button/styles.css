@@ -1,7 +1,7 @@
-.button__green {
-  background-color: #27ae60;
+.button__orange {
   color: white;
   cursor: pointer;
+  background-color: #e55321; 
 }
 
 .button__grey {
@@ -10,8 +10,16 @@
   cursor: pointer;
 }
 
-.button__green:hover {
-  filter: brightness(1.1);
+.button__orange:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: orangered;
+}
+
+.button__orange:active {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); 
+  transform: scale(0.98); 
+  
+  
 }
 
 .button__grey:hover {

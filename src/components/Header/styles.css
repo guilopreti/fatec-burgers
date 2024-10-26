@@ -41,7 +41,7 @@ p span {
 }
 
 #input-placeholder::placeholder {
-  color: #e0e0e0;
+  color: rgb(180, 180, 180)
 }
 
 .div-busca input:focus {
@@ -53,7 +53,8 @@ p span {
   height: 40px;
   border: none;
   border-radius: 8px;
-  background-color: #27ae60;
+  font-size: 14px;
+  font-weight: 600;
   color: white;
   cursor: pointer;
 }
