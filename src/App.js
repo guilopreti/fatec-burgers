@@ -16,6 +16,7 @@ function App() {
 
   useEffect(() => {
     if (modal) {
+      window.scrollTo(0, 0);
       document.body.style.overflow = "hidden";
       document.querySelector(".modal-section").style.display = "flex";
     } else {
